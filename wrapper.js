@@ -1,5 +1,3 @@
-// Jade 'HTML' wrapper for SocketStream 0.3
-
 var fs = require('fs'),
     reactTools = require('react-tools');
 
@@ -20,8 +18,7 @@ exports.init = function(root, config) {
     compile: function(path, options, cb) {
 
       var input = fs.readFileSync(path, 'utf8');
-      var output = reactTools.transform(input, {filename: path});
-
+      var output = reactTools.transform(input, {sourceFilename: path});
       cb(output);
     }
   };
