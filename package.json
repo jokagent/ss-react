@@ -1,0 +1,27 @@
+{
+  "name": "ss-react",
+  "author": {
+    "name": "jokagent",
+    "email": "jokagent@gmail.com"
+  },
+  "description": "React wrapper for SocketStream 0.3",
+  "version": "0.0.1",
+  "main": "./wrapper.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jokagent/ss-react.git"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "dependencies": {
+    "react-tools": "0.12.x"
+  },
+  "devDependencies": {},
+  "readme": "# React (js) wrapper for SocketStream 0.3\n\nAllows you to use [React](http://jade-lang.com) files (.jsx) in your SocketStream project.\n\n\n### Instructions\n\nAdd `ss-react` to your application's `package.json` file and then add this line to app.js:\n\n``` javascript\nss.client.formatters.add(require('ss-react'));\n```\n\n\n### Passing local variables\n\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/jokagent/ss-react/issues"
+  },
+  "homepage": "https://github.com/jokagent/ss-react"
+}
